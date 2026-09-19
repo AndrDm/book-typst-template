@@ -1,4 +1,4 @@
-#import "../setup.typ": *
+﻿#import "../setup.typ": *
 
 = Compatibility
 == Margin Notes Packages
@@ -61,3 +61,12 @@ It's completely#side-note[The theorem body simply disappears.] incompatible with
 === great-theorems
 It's completely incompatible with this template. It causes conflicts with the heading numbering#side-note[Actually the conflicting part is inside `rich-counters`, so that may be another incompatible package.] styles.
 
+
+=== chapter-indexed
+// possible indexed values:
+#kw("Margin Notes")[margin notes]
+#kw("Theorems")[theorion]
+#term("Term")
+#index("Programming Languages", "Typst")
+
+Typst is a programming language for typesetting.

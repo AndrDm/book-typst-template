@@ -1,5 +1,6 @@
 #import "haobook/lib.typ": *
 #import "@preview/zebraw:0.5.0": *
+#import "@preview/in-dexter:0.7.2": *
 #show: zebraw.with(..zebraw-themes.zebra)
 
 #let (
@@ -56,4 +57,9 @@
 = Notes
 I hate writing notes.
 
+= Index
+Keywords:
 
+#columns(2)[
+  #make-index(title: none)
+]
