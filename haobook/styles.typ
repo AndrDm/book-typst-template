@@ -82,7 +82,7 @@
         level: 1,
         [
           Contents
-          #v(-0.9cm)
+          #v(-0.7cm)
         ],
       )
     },
@@ -139,7 +139,7 @@
       x
       margin-note(
         bold-figure-caption(x.caption, x.location()),
-        dy: -measure(x.body).height - 0.65em,
+        dy: -measure(x.body).height - 1.65em,
       )
       v(-par.spacing)
     }

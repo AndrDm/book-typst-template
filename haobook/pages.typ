@@ -41,8 +41,17 @@
   show: front-matter-style
   heading(level: 1, [Preface])
   body
-  pagebreak()
+  //pagebreak()
 }
+
+
+#let acknowledgements(body) = {
+  show: front-matter-style
+  heading(level: 1, [Acknowledgements])
+  body
+  //pagebreak()
+}
+
 
 #let contents = {
   show: front-matter-style
