@@ -2,6 +2,7 @@
 #import "@preview/numbly:0.1.0": numbly
 #import "tools.typ": *
 
+#set page(width: 18.9cm, height: 22.6cm)
 
 #let chapter-fig-eq-no(
   config: (
@@ -43,9 +44,9 @@
   body
 }
 
-
+// MARGIN HERE
 #let front-matter-style(body) = {
-  set page(margin: 2.5cm)
+  set page(margin: 1.5cm)
   set par(justify: true)
   show: common-style
   show heading.where(level: 1): x => {
@@ -229,9 +230,10 @@
   }
 }
 
+// MARGIN Body
 #let body-styles(book: false, body) = {
   let config = (
-    outer: (far: 2.5cm, width: 5cm, sep: 0.6cm),
+    outer: (far: 1.5cm, width: 5cm, sep: 0.6cm),
     book: book,
   )
   marginalia.configure(..config)

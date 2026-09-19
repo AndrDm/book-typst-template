@@ -1,9 +1,18 @@
 #import "styles.typ": *
 #import "tools.typ": label-part
 
+
+#set page(width: 18.9cm, height: 22.6cm)
+#set page(margin: (y: 1.5cm, left: 1.34cm, right: 1.5cm))
+#set page(margin: (
+  top: 3cm,
+  bottom: 2cm,
+  x: 1.5cm,))
+
+  
 #let normal-page(body, book: false) = {
-  set page(margin: (y: 2.5cm, outside: 2.5cm, inside: 2.5cm)) if book
-  set page(margin: (y: 2.5cm, left: 2.5cm, right: 2.5cm)) if not book
+  set page(margin: (y: 1.5cm, outside: 1.5cm, inside: 1.5cm)) if book
+  set page(margin: (y: 1.5cm, left: 1.34cm, right: 1.5cm)) if not book
   body
 }
 

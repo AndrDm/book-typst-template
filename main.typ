@@ -3,6 +3,13 @@
 #import "@preview/in-dexter:0.7.2": *
 #show: zebraw.with(..zebraw-themes.zebra)
 
+#set page(width: 18.9cm, height: 22.6cm)
+
+#set page(margin: (
+  top: 3cm,
+  bottom: 2cm,
+  x: 1.5cm,))
+
 #let (
   body-styles,
   normal-page,
@@ -41,8 +48,11 @@
 
 #show: body-styles
 
-#part[Specifications]
+#part[Example]
 
+#include "chapters/chapter00.typ"
+
+#part[Specifications]
 
 #include "chapters/chapter01.typ"
 #include "chapters/chapter02.typ"
