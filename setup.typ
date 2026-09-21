@@ -17,3 +17,9 @@
   index(text)
   text
 }
+
+#set page(margin: (
+  top: 3cm,
+  bottom: 2cm,
+  left: 1.5cm,
+  right: 7.5cm))

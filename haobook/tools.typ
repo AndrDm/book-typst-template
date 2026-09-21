@@ -4,14 +4,25 @@
 #let side-note-counter = counter("side-note")
 #let no-side-caption-tag = metadata("no-side-caption")
 #let no-style-heading = metadata("no-style-heading")
+
 #let body-font-size = 9pt
-#let body-typeface = "Tilda Sans"
+//#let body-typeface = "Tilda Sans"
+#let body-typeface = "PT Serif Pro"
+#let h1-typeface = "PT Sans Pro"
+#let h2-typeface = "PT Sans Pro"
+
 #let header-color = rgb("#013025") //rgb(1, 48, 37)
 #let accent-color = rgb("#02a783") //rgb(2, 167, 131)
+
+#let h1-color = header-color
+#let h2-color =header-color
+
 #let header2-font-size = 12pt
 
-
 #let func-seq = [].func()
+
+#show math.equation: set text(font: "PT Serif Pro")
+#show raw: set text(font: "PT Mono")
 
 
 #let bold-figure-caption(fig-cap, loc) = context {

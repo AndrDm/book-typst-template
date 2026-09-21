@@ -22,10 +22,11 @@ It's recommended to use `#set-inherited-levels(1)` to make its numbering consist
 === ctheorems
 After a simple test, I believe the #link("https://github.com/sahasatvik/typst-theorems")[ctheorems] package is compatible with this template.
 
-It's recommended to set `base_level: 1` when defining thmboxes to make its numbering consistent with the template. Also, to ensure the style of `ref`#side-note[The default style of ctheorems `ref` is affected by the show rule of `link`, so it will be blue and underlined without action.] to theorems is consistent with the template, you are recommended to use the following `show` rule:
+It's recommended to set `base_level: 1` when defining thmboxes to make its numbering consistent with the template. Also, to ensure the style of `ref`#side-note[The default style of ctheorems `ref` is affected by the show rule of `link`, so it will be blue and underlined without action.] to theorems is consistent with the template, you are recommended to use the following `show` rule, and how to change font here:
 
-
+#show raw: set text(font: "PT Mono")
 ```typ
+#show raw: set text(font: "PT Mono")
 #show ref: it => {
   if it.element == none or it.element.func() != figure or it.element.kind != "thmenv" {
     return it

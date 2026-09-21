@@ -3,14 +3,8 @@
 #set page(margin: (
   top: 3cm,
   bottom: 2cm,
-  x: 1.5cm,))
-
-#set page(margin: (
-  top: 3cm,
-  bottom: 2cm,
-  left: 1.5cm,
-  right: 7.61cm))
-
+  left: 1.4cm,
+  right: 7.6cm))
 
 = Historic Notes
 "Mathematics takes us still further from what is human,
@@ -28,8 +22,17 @@ complex relationships to simpler, less complex ones, thereby providing
 adequate explanations. In doing so, science has not only changed our
 daily lives on a massive scale but has also created the foundation of our
 modern view of the world.
-test _italic_ test
+test _italic_ test.
+You can use `side-figure` to add a figure like @fig-rect1 to the document.
 
+#side-figure(
+  figure(
+    rect(height: 12mm, width:20mm),
+    caption: "Gottfried Wilhelm Leibniz ranks among the most famous and universally talented scholars of the late 17th and early 18th centuries. A sheer endless list of publications and letters forms an unparalleled legacy, covering areas from philosophy, mathematics, and the natural sciences to history and law.",
+  ),
+  label: <fig-rect1>,
+  dy: -10em,
+)
 
 
 == Lorem ipsum

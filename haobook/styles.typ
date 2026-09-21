@@ -2,8 +2,6 @@
 #import "@preview/numbly:0.1.0": numbly
 #import "tools.typ": *
 
-#set page(width: 18.9cm, height: 22.6cm)
-
 #let chapter-fig-eq-no(
   config: (
     (figure.where(kind: image), figure, "1-1"),
@@ -46,7 +44,7 @@
 
 // MARGIN HERE
 #let front-matter-style(body) = {
-  set page(margin: 1.5cm)
+  set page(margin: 1.5cm) // Margin left for sections
   set par(justify: true)
   show: common-style
   show heading.where(level: 1): x => {
@@ -204,7 +202,7 @@
               ),
               align: (right + bottom, center, center, center, left + bottom),
               pad(
-                text(28pt, x.body, font: "Tilda Sans", fill: blue), // Header
+                text(28pt, x.body, font: h1-typeface, fill: h1-color), // Header
                 bottom: bottom-pad,
               ),
               [],
@@ -219,13 +217,13 @@
         )
       },
     )
-    v(3.5cm)
+    v(3.5cm) // Vertical margin from header to body
     context chapter-outline()
   } else if x.level == 2 {
     v(1cm, weak: true) // top margin
     set text(16pt)
-    set text(font: "Tilda Sans") // Second Level Font
-    set text(fill: header-color) //second level color
+    set text(font: h2-typeface) // Second Level Font
+    set text(fill: h2-color) //second level color
     x
     v(0.7cm, weak: true)
   } else {
@@ -236,7 +234,7 @@
 // MARGIN Body
 #let body-styles(book: false, body) = {
   let config = (
-    outer: (far: 1.5cm, width: 5cm, sep: 0.6cm),
+    outer: (far: 1.5cm, width: 5.2cm, sep: 0.6cm),
     book: book,
   )
   marginalia.configure(..config)

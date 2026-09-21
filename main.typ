@@ -3,12 +3,13 @@
 #import "@preview/in-dexter:0.7.2": *
 #show: zebraw.with(..zebraw-themes.zebra)
 
+//Page Size is here
 #set page(width: 18.9cm, height: 22.6cm)
 
-#set page(margin: (
-  top: 3cm,
-  bottom: 2cm,
-  x: 1.0cm,))
+//#set page(margin: (
+//  top: 3cm,
+//  bottom: 2cm,
+//  x: 1.0cm,))
 
 #let (
   body-styles,
