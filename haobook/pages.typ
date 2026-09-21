@@ -3,13 +3,13 @@
 
 
 #set page(width: 18.9cm, height: 22.6cm)
-#set page(margin: (y: 1.5cm, left: 1.34cm, right: 1.5cm))
+#set page(margin: (y: 1.0cm, left: 1.34cm, right: 1.5cm))
 #set page(margin: (
   top: 3cm,
   bottom: 2cm,
-  x: 1.5cm,))
+  x: 1.0cm,))
 
-  
+
 #let normal-page(body, book: false) = {
   set page(margin: (y: 1.5cm, outside: 1.5cm, inside: 1.5cm)) if book
   set page(margin: (y: 1.5cm, left: 1.34cm, right: 1.5cm)) if not book

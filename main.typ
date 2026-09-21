@@ -8,7 +8,7 @@
 #set page(margin: (
   top: 3cm,
   bottom: 2cm,
-  x: 1.5cm,))
+  x: 1.0cm,))
 
 #let (
   body-styles,
@@ -20,14 +20,14 @@
 #cover(
   title: [
     Example and Documentation \
-    of the HaoBook Template
+    of the Typst Book Template
   ],
   author: "ParaN3xus",
   date: datetime(year: 2025, month: 4, day: 6),
 )
 
 #epigraph[
-  By `epigraph`, you can add a quote or a saying at the beginning of the book.
+  By `epigraph`, you can add a quote or a saying at the beginning of the book...
 ]
 
 #preface[

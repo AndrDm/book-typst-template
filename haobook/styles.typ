@@ -181,6 +181,7 @@
       set page(header: none)
       if book {
         pagebreak(to: "odd")
+
       }
     }
     place(
@@ -203,11 +204,11 @@
               ),
               align: (right + bottom, center, center, center, left + bottom),
               pad(
-                text(26pt, x.body),
+                text(28pt, x.body, font: "Tilda Sans", fill: blue), // Header
                 bottom: bottom-pad,
               ),
               [],
-              line(angle: 90deg, length: 4cm),
+              line(angle: 90deg, length: 42mm), // Decorationn Line
               [],
               pad(
                 text(74pt, counter(heading).display(heading.numbering)),
@@ -221,8 +222,10 @@
     v(3.5cm)
     context chapter-outline()
   } else if x.level == 2 {
-    v(1cm, weak: true)
-    set text(14pt)
+    v(1cm, weak: true) // top margin
+    set text(16pt)
+    set text(font: "Tilda Sans") // Second Level Font
+    set text(fill: header-color) //second level color
     x
     v(0.7cm, weak: true)
   } else {
@@ -251,7 +254,10 @@
   )
 
   show: common-style
+  //set text(body-font-size)
   set text(body-font-size)
+  set text(font: body-typeface) // Body Text Font
+  set text(fill: black) // body color
 
   // heading style
   show heading: heading-styles.with(book: book)
